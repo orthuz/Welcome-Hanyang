@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.hanyang.welcome">
+	<logger name="com.hanyang.test">
 		<level value="info" />
 	</logger>
 	
