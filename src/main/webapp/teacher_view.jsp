@@ -14,7 +14,11 @@
 		margin: 0 auto;
 		text-align: left;
 	}
-
+	#tableDiv{
+		width: 840px;
+		margin: 0 auto;
+		align: right;	
+		}
 	ul{
 		list-style-type: none;
 		margin: 0;
@@ -51,7 +55,76 @@
 		</ul>
 	</div>
 	<div id="mainDiv">
-		<h1>선생님</h1>
+			<h1 style="width: 300px;">선생님</h1>
+			<select name="dept" style="float: right">
+				<option value="">test</option>
+				<option value="test1">test1</option>
+				<option value="test2">test2</option>
+			</select>
+	</div>
+	<div id="tableDiv">
+		<table style="float:left">
+			<tr>
+				<th></th>
+				<th><img src="https://image.winudf.com/v2/image/Y29tLmJ1c2JpZy5qb3lfaWNvbl8wX2Q1MDNiZGFh/icon.png?w=170&fakeurl=1"></th>
+			</tr>
+			<tr>
+				<th>담당 교과 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>담당 학급 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>사 무 실 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>부 서 :</th>
+				<th></th>
+			</tr>
+		</table>
+		<table style="float:left">
+			<tr>
+				<th></th>
+				<th><img src="https://image.winudf.com/v2/image/Y29tLmJ1c2JpZy5qb3lfaWNvbl8wX2Q1MDNiZGFh/icon.png?w=170&fakeurl=1"></th>
+			</tr>
+			<tr>
+				<th>담당 교과 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>담당 학급 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>사 무 실 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>부 서 :</th>
+				<th></th>
+			</tr>
+		</table>
+		<table style="float:left">
+			<tr>
+				<th></th>
+				<th><img src="https://image.winudf.com/v2/image/Y29tLmJ1c2JpZy5qb3lfaWNvbl8wX2Q1MDNiZGFh/icon.png?w=170&fakeurl=1"></th>
+			</tr>
+			<tr>
+				<th>담당 교과 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>담당 학급 :</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>사 무 실 :</th>
+				<th></th>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>
