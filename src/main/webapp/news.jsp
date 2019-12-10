@@ -55,4 +55,30 @@
 		<p>구할 수 있는 것이다 청춘은 인생의 황금시대다 우리는 이 황금시대의 가치를 충분히 발휘하기 위하여 이</p>
 	</div>
 </body>
+<script>
+   const ChangeTimer = function() {
+       const C = {
+                 timer : null,
+                 limit : 1000 * 60 * 5,
+                 fnc   : function() {},
+                 start : function() {
+                        C.timer = window.setTimeout(C.fnc, C.limit);
+                },
+                reset : function() {
+                        window.clearTimeout(C.timer);
+                        C.start();
+                }
+            };
+   document.onmousemove = function() {
+      C.reset();
+      };
+       return C;
+    }();
+    ChangeTimer.limit = 1000 * 60 * 5;
+  
+    ChangeTimer.fnc = function() {
+       location.href = "main.jsp";
+    }
+	ChangeTimer.start();
+</script>
 </html>

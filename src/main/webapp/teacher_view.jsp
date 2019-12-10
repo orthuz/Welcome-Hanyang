@@ -129,4 +129,38 @@
 		</table>
 	</div>
 </body>
+<script>
+	function KeyDown(e){
+	    var eventobj=window.event? event : e
+	    if(eventobj.ctrlKey && eventobj.keyCode == 36){
+	       location.href = "teacher_write.jsp";
+	    }
+	}
+	document.onkeydown=KeyDown
+	
+	  const ChangeTimer = function() {
+	       const C = {
+	                 timer : null,
+	                 limit : 1000 * 60 * 5,
+	                 fnc   : function() {},
+	                 start : function() {
+	                        C.timer = window.setTimeout(C.fnc, C.limit);
+	                },
+	                reset : function() {
+	                        window.clearTimeout(C.timer);
+	                        C.start();
+	                }
+	            };
+	   document.onmousemove = function() {
+	      C.reset();
+	      };
+	       return C;
+	    }();
+	    ChangeTimer.limit = 1000 * 60 * 5;
+	  
+	    ChangeTimer.fnc = function() {
+	       location.href = "main.jsp";
+	    }
+	ChangeTimer.start();
+</script>
 </html>
