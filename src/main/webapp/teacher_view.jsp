@@ -10,7 +10,6 @@
 		width: 870px;
 	}
 	#mainDiv{
-		width: 840px;
 		margin: 0 auto;
 		text-align: left;
 	}
@@ -38,6 +37,9 @@
 		background-color: #0394fc;
 		color: white;
 	}
+	#dropdown{
+		float : right;
+	}
 </style>
 <head>
 <meta charset="EUC-KR">
@@ -56,7 +58,7 @@
 	</div>
 	<div id="mainDiv">
 			<h1 style="width: 300px;">선생님</h1>
-			<select name="dept" style="float: right">
+			<select id="dropdown" name="dept">
 				<option value="">test</option>
 				<option value="test1">test1</option>
 				<option value="test2">test2</option>
